@@ -4,45 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../normalize_and_reset/_normalize.css">
+    <link rel="stylesheet" href="../normalize_and_reset/_reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="form-container">
 
-    <div class="form-container">
+            <ul class="tab-group">
+                <li class="tab">
+                    <a href="/" class="link">Sign Up</a>
+                </li>
+                <li class="tab">
+                    <a href="/" class="link">Log In</a>
+                </li>
+            </ul>
 
-        <ul class="tab-group">
-            <li class="tab-group__tab">
-                <a href="/" class="tab-group__link">Sign Up</a>
-            </li>
-            <li class="tab-group__tab">
-                <a href="/" class="tab-group__link">Log In</a>
-            </li>
-        </ul>
-
-        <h1 class="title">Sign Up for Free</h1>
+            <h1 class="title">Sign Up for Free</h1>
 
 
-        <form action="" class="form">
-            <div class="names">
+            <form action="" class="form">
+                <div class="name-wrapper">
+                    <div class="field-wrap">
+                        <input id="name" type="text" class="input" name="first-name" placeholder="" required>
+                        <label for="name" class="label">
+                            First Name <span class="green">*</span>
+                        </label>
+                    </div>
 
-                <div class="form__field-wrapper">
-                    <input id="name" type="text" class="form__input" name="first-name" placeholder="">
-                    <label for="name" class="form__label">
-                        First Name <span class="label__green green">*</span>
-                    </label>
+                    <div class="field-wrap">
+                        <input id="name-2" type="text" class="input" name="second-name" placeholder="" required>
+                        <label for="name-2" class="label">
+                            Second Name <span class="green">*</span>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="form__field-wrapper">
-                    <input id="name-2" type="text" class="form__input" name="second-name" placeholder="">
-                    <label for="name-2" class="form__label">
-                        Second Name <span class="label__green green">*</span>
-                    </label>
+                <div class="email-wrapper">
+                    <div class="field-wrap">
+                        <input id="email" type="email" class="input width" name="email" placeholder="" required>
+                        <label for="email" class="label">
+                            Email Address <span class="green">*</span>
+                        </label>
+                    </div>
                 </div>
-            </div>
-        </form>
 
+                <div class="password-wrapper">
+                    <div class="field-wrap">
+                        <input id="password" type="password" class="input width" name="password" placeholder="" minlength="8" maxlength="20" required>
+                        <label for="password" class="label">
+                            Set A Password <span class="green">*</span>
+                        </label>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="button">Get Started</button>
+            </form>
+
+        </div>
     </div>
 </body>
 
